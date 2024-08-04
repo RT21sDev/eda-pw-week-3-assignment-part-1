@@ -40,13 +40,13 @@ console.log('First animal is', firstAnimal);
 //      Be sure to console.log this new variable to make sure your code
 //      worked as expected.
 
-let firstFood = numberOfFoods[1];
+let firstFood = numberOfFoods[0];
 console.log('First Food is', firstFood);
 
-let secondFood = numberOfFoods[2]; //<- eh why not and below
+let secondFood = numberOfFoods[1]; //<- eh why not and below
 console.log('Second Food is', secondFood);
 
-let thirdFood = numberOfFoods[3];  
+let thirdFood = numberOfFoods[2];  
 console.log('Third Food is', thirdFood);
 
 // 3.b. TODO: Create a variable `lastAnimal` and assign it the value of
@@ -54,7 +54,7 @@ console.log('Third Food is', thirdFood);
 //      You'll need to console.log `animalArray` and `lastAnimal` to make
 //      sure that your code does what you want. (Never trust your code until
 //      you have proof that it works!)
-let lastFood = numberOfFoods[4];  //<- the "forth food"
+let lastFood = numberOfFoods[3];  //<- the "forth food"
 console.log('Last Food is', LastFood);
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
@@ -108,7 +108,9 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 //      array only contains three items now, AND to verify that `lastColor`
 //      contains the value "teal".)
 
-
+let lastColor = color.pop();
+console.log('Colors array:')
+console.log('lastColor:')
 // Example: Remove the first animal using the Array.shift method.
 removedAnimal = animalArray.shift();
 console.log('Removed the first animal', removedAnimal);
@@ -118,7 +120,9 @@ console.log('The animals are now', animalArray);
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
 
-
+removedColors = colorsArray.shift();
+console.log('Removed the first colors', removedColors);
+console.log('The colors are now', colorsArray);
 
 
 // STRETCH GOALS:
