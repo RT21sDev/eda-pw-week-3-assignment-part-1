@@ -11,8 +11,8 @@ console.log('Animals are: ', animalArray);
 //    Be sure to console.log your array of foods to the console with
 //    a message, similar to the example above.
 
-let favFoods = ['soup', 'cheeses', 'steak', 'pasta']
-console.log('Food are: ', favFoods);
+let favoriteFoods = ['soup', 'cheeses', 'steak', 'pasta']
+console.log('Food are: ', favoriteFoods);
 
 // Array.length: A property that tells you how many items are in a given array.
 console.log('--- 2. Length of an array ---');
@@ -26,7 +26,7 @@ console.log('Number of animals:', numberOfAnimals);
 //    Don't forget to console.log `numberOfFoods` to make sure your code worked!
 
 let numberOfFoods = numberOfFoods.length //<-took me abit i thought i would use favfoods
-console.log('number Of Foods:', numberOfFoods);
+console.log('number Of Foods:', favoriteFoods);
 
 // Accessing array items
 console.log('--- 3. Accessing items in an array ---');
@@ -54,12 +54,15 @@ console.log('Third Food is', thirdFood);
 //      You'll need to console.log `animalArray` and `lastAnimal` to make
 //      sure that your code does what you want. (Never trust your code until
 //      you have proof that it works!)
+
 let lastFood = numberOfFoods[3];  //<- the "forth food"
-console.log('Last Food is', LastFood);
+console.log('Last Food is', lastFood);
+
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
 
-//<-? 
+let lastAnimal = animalArray[animalArray.length - 1];
+console.log('Last Animal is', lastAnimal);
 
 // Adding & Removing Array Items
 console.log('--- 4. Adding and removing array items ---');
@@ -74,8 +77,8 @@ console.log('Added an animal to end,', animalArray);
 //      Similar to above, add the `dessert` to the end of your `favoriteFoods`
 //      array. (How can you be 100% certain this worked? 🤔)
 
-let dessert=('ice', 'cream', 'sprinkles') //<-making this easier for myself
-console.log ('Dessert are: ', dessert) //<- not 100% if this is correct i think it fine to me 
+let dessert=('icecream');
+console.log ('Dessert are: ', dessert) 
 
 // Example: Add to the beginning of an array using the Array.unshift method.
 let animalToUnshift = 'walrus';
@@ -90,8 +93,8 @@ let FoodToUnshift = 'yum?'; //<- all to do with unshift is an random spark of id
 favFoods.unshift(FoodToUnshift);
 console.log(`Added an Entree to beginning: ${favFoods}`);//<- end of spark of idea
 
-let entree=('spiniach dip', 'prezel', 'wings')
-console.log ('Entree are: ', entree)
+let entree=('spiniach dip');
+console.log ('Entree are: ', entree);
 
 // Example: Remove the last animal by using the Array.pop method.
 let removedAnimal = animalArray.pop();
@@ -111,6 +114,7 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 let lastColor = color.pop();
 console.log('Colors array:')
 console.log('lastColor:')
+
 // Example: Remove the first animal using the Array.shift method.
 removedAnimal = animalArray.shift();
 console.log('Removed the first animal', removedAnimal);
@@ -127,15 +131,18 @@ console.log('The colors are now', colorsArray);
 
 // STRETCH GOALS:
 
-let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
+
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
-
+gem[1] = 'Tourmaline' ;
+console.log('updated gems array', gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
 
+gems.sort().reverse();
+console.log('gems array in reverse alphabetical order', gems);
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
 //     that's made up of each value from the `gems` array, but separated by the
@@ -145,6 +152,8 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
 
+let gemString = gems.join(' and ');
+console.log('gem string', gemString);
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
 //     the gems array with the colors array.
@@ -152,6 +161,12 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
 
+let gems1 = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
+console.log(gems1);
+let colorArray = ['yellow', 'green']
+console.log(colorArray); 
+let colorfulGems = gems.concat(colorsArray);
+console.log('colorful Gems Array', colorfulGems)
 
 
 
